@@ -133,74 +133,36 @@
 
     <main>
       <section class="container">
-        <ul class="vare list">
+
+        
+        <div class="slider-container">
+          <button id="prevBtn"><img src="images/flecha_der.png" width="30" height="30"  alt="fle"></button>
+        
           <div class="slider">
-            <ul class="list">
-              <li>
-                <img
-                  src="images/colegio1.jpg"
-                  width="690"
-                  height="530"
-                  alt="Imagen 1"
-                  class="banner-img"
-                />
-              </li>
-              <li>
-                <img
-                  src="images/Natural_Sciences.jpg"
-                  width="690"
-                  height="530"
-                  alt="Imagen 2"
-                  class="banner-img"
-                />
-              </li>
-              <li>
-                <img
-                  src="images/colegio3.jpg"
-                  width="690"
-                  height="530"
-                  alt="Imagen 3"
-                  class="banner-img"
-                />
-              </li>
-              <li>
-                <img
-                  src="images/Estudiantes.jpg"
-                  width="690"
-                  height="530"
-                  alt="Imagen 3"
-                  class="banner-img"
-                />
-              </li>
+            <ul>
+              <li><img src="images/colegio1.jpg" alt="Imagen 1"></li>
+              <li><img src="images/Estudiante.jpg" alt="Imagen 2"></li>
+              <li><img src="images/colegio1B.png" alt="Imagen 3"></li>
+              <li><img src="images/colegio3.jpg" alt="Imagen 4"></li>
             </ul>
           </div>
-
-          <ul class="buttons list">
-            <li class="flchas-index">
-              <img
-                id="prevBtn"
-                src="images/flecha_der.png"
-                width="30"
-                height="40"
-                alt="flecha"
-              />
-            </li>
-            <li class="flchas-index">
-              <img
-                id="nextBtn"
-                src="images/flecha_ize.png"
-                width="30"
-                height="40"
-                alt="flecha"
-              />
-            </li>
-          </ul>
+        
+          <button id="nextBtn"><img src="images/flecha_ize.png"width="30" height="30" alt="fle"></button>
+        </div>
+        
+        <ul class="controls ">
+          <button class="control-btn" data-index="1"></button>
+          <button class="control-btn" data-index="0"></button>
+          <button class="control-btn" data-index="2"></button>
+          <button class="control-btn" data-index="3"></button>
         </ul>
 
+
         <script src="trans.js"></script>
+
+
         <a href="noticias.html"
-          ><h2 class="title-is">Noticias de la semana</h2></a
-        >
+          ><h2 class="title-is">Noticias de la semana</h2></a>
         <ul class="content_row list">
           <li class="contenedo">
             <a href="juegos.html">
@@ -217,7 +179,7 @@
           <li class="contenedo">
             <a href="gobierno escolar.html">
               <figure>
-                <img src="images/gobierno.jpg" alt="gob" />
+                <img src="images/gobierno.jpg" alt="gob"/>
                 <div class="capa"></div>
               </figure>
               <h3 class="h3b content-subtitlesins">gobierno escolar</h3>
@@ -236,6 +198,7 @@
             </a>
           </li>
         </ul>
+        
         <h2 class="title-is">Páginas Sugeridas</h2>
         <ul class="list">
           <li class="content-wrap">
@@ -254,7 +217,6 @@
             />
             <img
               src="./images/ex.jpg"
-              width="140"
               height="110"
               alt="Exploraneta"
             />

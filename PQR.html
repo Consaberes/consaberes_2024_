@@ -115,170 +115,176 @@
       </div>
    </header>
    <main>
+      
       <section class="container">
-        <ul class="vare list">
-          <div class="slider">
-            <ul class="list ">
-                <li><img src="images/colegio1.jpg" width="690"  height="530" alt="Imagen 1" class="banner-img"></li>
-                <li><img src="images/Natural_Sciences.jpg" width="690"  height="530" alt="Imagen 2" class="banner-img"></li>
-                <li><img src="images/colegio3.jpg" width="690"  height="530" alt="Imagen 3" class="banner-img"></li>
-                <li><img src="images/Estudiantes.jpg" width="690"  height="530" alt="Imagen 3" class="banner-img"></li>
-              </ul>
-        </div>
+      <div class="slider-container">
+         <button id="prevBtn"><img src="images/flecha_der.png" width="30" height="30"  alt="fle"></button>
       
-        <ul class="buttons list">
-            <li class="flchas-index"><img id="prevBtn" src="images/flecha_der.png"width="30" height="40" alt="flecha"></li>
-            <li class="flchas-index"><img id="nextBtn" src="images/flecha_ize.png" width="30" height="40" alt="flecha"></li>
-        </ul>
-      </ul>
-    
-        <script src="scriptl.js"></script>
-        <a href="noticias.html"><h2 class="title-is">Noticias de la semana</h2></a>
-        <ul class=" content_row list">
-          
-          
+         <div class="slider">
+         <ul>
+            <li><img src="images/colegio1.jpg" alt="Imagen 1"></li>
+            <li><img src="images/Estudiante.jpg" alt="Imagen 2"></li>
+            <li><img src="images/colegio1B.png" alt="Imagen 3"></li>
+            <li><img src="images/colegio3.jpg" alt="Imagen 4"></li>
+         </ul>
+         </div>
+      
+         <button id="nextBtn"><img src="images/flecha_ize.png"width="30" height="30" alt="fle"></button>
+      </div>
+      
+      <div class="controls">
+         <button class="control-btn" data-index="0">1</button>
+         <button class="control-btn" data-index="1">2</button>
+         <button class="control-btn" data-index="2">3</button>
+         <button class="control-btn" data-index="3">4</button>
+      </div>
+
+         <script src="trans.js"></script>
+            <a href="noticias.html"><h2 class="title-is">Noticias de la semana</h2></a>
+            <ul class=" content_row list">
             
-            <li class="contenedo">
-              <a href="juegos.html">
-                <figure>
-                  <img src="images/Juegos.jpg" alt="horario"/>
-                  <div class="capa">
-                  </div>
-                </figure>
-                <h3 class="h3b content-subtitlesins">Inauguración de los juego</h3>
-              </a>
+
+                <li class="contenedo">
+                  <a href="juegos.html">
+                    <figure>
+                      <img src="images/Juegos.jpg" alt="horario"/>
+                      <div class="capa">
+                      </div>
+                    </figure>
+                    <h3 class="h3b content-subtitlesins">Inauguración de los juego</h3>
+                  </a>
+                </li>
+    
+                <li class="contenedo">
+                  <a href="gobierno escolar.html">
+                    <figure>
+                      <img src="images/gobierno escolar.png" alt="horario"/>
+                      <div class="capa">
+                      </div>
+                    </figure>
+                    <h3 class="h3b content-subtitlesins">gobierno escolar</h3>
+                  </a>
+                </li>
+    
+                <li class="contenedo ">
+                  <a href="ing sede c.html">
+                    <figure>
+                      <img src="images/colegio sede c.png" alt="horario"/>
+                      <div class="capa">
+                      </div>
+                    </figure>
+                    <h3 class="h3b content-subtitlesins">inauguración de la sede c</h3>
+                  </a>
+                </li>
+    
+    
+            </ul>
+            <h2 class="title-is">Páginas Sugeridas</h2>
+            <ul class="list">
+              <li class="content-wrap">
+                <img src="./images/sen.jpg" width="94" height="110" alt="Sena"/>
+                <img
+                  src="./images/bogota_logo.png"
+                  width="100"
+                  height="100"
+                  alt="Secretaria-de-educación"
+                />
+                <img
+                  src="./images/ra.jpg"
+                  width="94"
+                  height="110"
+                  alt="Red académica"
+                />
+                <img
+                  src="./images/ex.jpg"
+                  width="140"
+                  height="110"
+                  alt="Exploraneta"
+                />
+              </li>
+            </ul>
+          </section>
+        </main>
+    
+        <footer class="section-footer ">
+          <ul class="list content_row-reverse fondo ">
+            
+            <li class="menu-icon">
+              <svg class="icon">
+                <a
+                  href="https://twitter.com/i/flow/login?redirect_after_login=%2FTecnicoIed"
+                  target="_blank"
+                >
+                  <use xlink:href="./images/icons.svg#twitterx"></use>
+                </a>
+              </svg>
+              <svg class="icon">
+                <a
+                  href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la"
+                  target="_blank"
+                >
+                  <use xlink:href="./images/icons.svg#instagram"></use>
+                </a>
+              </svg>
+              <svg class="icon">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100068460205322"
+                  target="_blank"
+                >
+                  <use xlink:href="./images/icons.svg#facebook"></use>
+                </a>
+              </svg>
+              <svg class="icon">
+                <a
+                  href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw"
+                  target="_blank"
+                >
+                  <use xlink:href="./images/icons.svg#youtube"></use>
+                </a>
+              </svg>
             </li>
-
-            <li class="contenedo">
-              <a href="gobierno escolar.html">
-                <figure>
-                  <img src="images/gobierno escolar.png" alt="horario"/>
-                  <div class="capa">
-                  </div>
-                </figure>
-                <h3 class="h3b content-subtitlesins">gobierno escolar</h3>
-              </a>
-            </li>
-
-            <li class="contenedo ">
-              <a href="ing sede c.html">
-                <figure>
-                  <img src="images/colegio sede c.png" alt="horario"/>
-                  <div class="capa">
-                  </div>
-                </figure>
-                <h3 class="h3b content-subtitlesins">inauguración de la sede c</h3>
-              </a>
-            </li>
-
-
-        </ul>
-        <h2 class="title-is">Páginas Sugeridas</h2>
-        <ul class="list">
-          <li class="content-wrap">
-            <img src="./images/sen.jpg" width="94" height="110" alt="Sena"/>
-            <img
-              src="./images/bogota_logo.png"
-              width="100"
-              height="100"
-              alt="Secretaria-de-educación"
-            />
-            <img
-              src="./images/ra.jpg"
-              width="94"
-              height="110"
-              alt="Red académica"
-            />
-            <img
-              src="./images/ex.jpg"
-              width="140"
-              height="110"
-              alt="Exploraneta"
-            />
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="section-footer ">
-      <ul class="list content_row-reverse fondo ">
-        
-        <li class="menu-icon">
-          <svg class="icon">
-            <a
-              href="https://twitter.com/i/flow/login?redirect_after_login=%2FTecnicoIed"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#twitterx"></use>
-            </a>
-          </svg>
-          <svg class="icon">
-            <a
-              href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#instagram"></use>
-            </a>
-          </svg>
-          <svg class="icon">
-            <a
-              href="https://www.facebook.com/profile.php?id=100068460205322"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#facebook"></use>
-            </a>
-          </svg>
-          <svg class="icon">
-            <a
-              href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#youtube"></use>
-            </a>
-          </svg>
-        </li>
-      
-      </ul>
-      <address class="content-footer ">
-        <ul class="list sede ">
-          <li>
-          <a href="Sede-A.html"><button class="footer-bot">Sede A</button></a>
-          <p>Carrera 51A Nº 26 - 38 sur</p>
-          <p>Localidad Puente Aranda - Barrio Alcalá</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            ></p>
-          <p> <aB href="tel:+523002861876" class="af"
-              >+57 316 2380179 - 2380797280410</aB
-            ></p>
-          </li>
-        </ul>
-        <ul class="list sede sed_borde ">
-          <li>
-          <a href="Sede-B.html"><button class="footer-bot">Sede B-Francia</button></a>
-          <p>Carrera 51c #33-41 Sur, Bogotá</p>
-          <p>Localidad Puente Aranda - Barrio Alcalá</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            ></p>
-          <p> <a href="tel:+523002861876" class="af">2380979 - fax:7112275</a></p>
-          </li>
-        </ul>
-        <ul class="list sede ">
-          <li>
-          <a href="Sede-C.html"><button class="footer-bot">Sede C-Tayrona</button></a>
-          <p>Calle 29 Sur #41 A-42, Bogotá</p>
-          <p>Localidad Puente Aranda - Santa Rita</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            ></p>
-          <p> <a href="tel:+523002861876" class="af">2028525</a></a></p>
-          </li>
-        </ul> 
-      </address>
-      </ul>
-    </footer>
-
+          
+          </ul>
+          <address class="content-footer ">
+            <ul class="list sede ">
+              <li>
+              <a href="Sede-A.html"><button class="footer-bot">Sede A</button></a>
+              <p>Carrera 51A Nº 26 - 38 sur</p>
+              <p>Localidad Puente Aranda - Barrio Alcalá</p>
+              <p> <a href="mailto:info@educacionbogota.com" class="af"
+                  >coldibenjaminherre16@educacionbogota.edu.co</a
+                ></p>
+              <p> <aB href="tel:+523002861876" class="af"
+                  >+57 316 2380179 - 2380797280410</aB
+                ></p>
+              </li>
+            </ul>
+            <ul class="list sede sed_borde ">
+              <li>
+              <a href="Sede-B.html"><button class="footer-bot">Sede B-Francia</button></a>
+              <p>Carrera 51c #33-41 Sur, Bogotá</p>
+              <p>Localidad Puente Aranda - Barrio Alcalá</p>
+              <p> <a href="mailto:info@educacionbogota.com" class="af"
+                  >coldibenjaminherre16@educacionbogota.edu.co</a
+                ></p>
+              <p> <a href="tel:+523002861876" class="af">2380979 - fax:7112275</a></p>
+              </li>
+            </ul>
+            <ul class="list sede ">
+              <li>
+              <a href="Sede-C.html"><button class="footer-bot">Sede C-Tayrona</button></a>
+              <p>Calle 29 Sur #41 A-42, Bogotá</p>
+              <p>Localidad Puente Aranda - Santa Rita</p>
+              <p> <a href="mailto:info@educacionbogota.com" class="af"
+                  >coldibenjaminherre16@educacionbogota.edu.co</a
+                ></p>
+              <p> <a href="tel:+523002861876" class="af">2028525</a></a></p>
+              </li>
+            </ul> 
+          </address>
+          </ul>
+        </footer>
+    
       <!-- Formulario -->
       <div
          class="backdrop"
