@@ -52,7 +52,7 @@
   justify-content: space-between;
   gap: 50px;
 }
-.title-is {
+.title-si {
   position: relative;
   display: flex;
   height: 50px;
@@ -65,8 +65,8 @@
   z-index: 1;
 }
 
-.title-is::before,
-.title-is::after {
+.title-si::before,
+.title-si::after {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -74,7 +74,7 @@
   transition: opacity 2s ease-in-out;
 }
 
-.title-is::before {
+.title-si::before {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
@@ -85,7 +85,7 @@
   opacity: 1;
 }
 
-.title-is::after {
+.title-si::after {
   background: linear-gradient(
     90deg,
     var(--red_college_dark) 0%,
@@ -98,15 +98,15 @@
   
 }
 
-.title-is:hover::before {
+.title-si:hover::before {
   opacity: 0;
 }
 
-.title-is:hover::after {
+.title-si:hover::after {
   opacity: 1;
 }
 
-.title-is:hover {
+.title-si:hover {
   color: var(--red_collage_m);
 }
 
