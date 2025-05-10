@@ -280,20 +280,134 @@
       </div>
     </section>
 
-    <div class="menu3">
-      <ul class="menu-horizontal">
-        <li><a href="./index-I.html">Start</a></li>
-        <li><a href="./institucional-I.html">Our Institution</a></li>
-        <li><a href="./noticias-I.html">News</a></li>
-        <li><a href="./proyectos-I.html">Projects</a></li>
-        <li><a href="./emisora-I.html">Station</a></li>
-        <li><a href="./Egresados-I.html">Graduates</a></li>
-        <li><a href="./library-I.html">Library</a></li>
-        <li><a href="./histotrias_destacadas-I.html">Stories</a></li>
-        <li><a href="./teamours-I.html">Our Team</a></li>
-        <li><a href="PQR-I.html">QCC</a></li>
-      </ul>
-    </div>
+     <style>
+    :root {
+      --blue_college: #2f296d;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .menu3 {
+      background: var(--blue_college);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      width: fit-content; /* Solo lo necesario */
+      border-radius: 0 0 8px 8px;
+    }
+
+    .menu-horizontal {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    .menu-horizontal > li {
+      margin-right: 10px;
+    }
+
+    .menu-horizontal > li > a {
+      display: block;
+      padding: 10px 12px;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .menu-horizontal > li > a:hover {
+      background-color: rgb(236, 232, 232);
+      color: #020024;
+      border-radius: 5px;
+    }
+
+    .menu-toggle {
+      font-size: 22px;
+      cursor: pointer;
+      color: var(--white);
+      background: none;
+      border: 1px solid var(--white);
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu3 {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .menu-horizontal {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: max-height 0.4s ease-in-out;
+      }
+
+      .menu-horizontal.active {
+        max-height: 500px;
+      }
+
+      .menu-horizontal > li {
+        width: 100%;
+      }
+
+      .menu-horizontal > li > a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu3">
+    <button class="menu-toggle">☰</button>
+    <ul class="menu-horizontal">
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./institucional.html">Nuestra Institución</a></li>
+      <li><a href="./noticias.html">Noticias</a></li>
+      <li><a href="./proyectos.html">Proyectos</a></li>
+      <li><a href="./emisora.html">Emisora</a></li>
+      <li><a href="./egresados.html">Egresados</a></li>
+      <li><a href="./library.html">Biblioteca digital</a></li>
+      <li><a href="./histotrias_destacadas.html">Historias Destacadas</a></li>
+      <li><a href="./teamours.html">Nuestro equipo</a></li>
+      <li><a href="PQR.html">PQR</a></li>
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menu = document.querySelector(".menu-horizontal");
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelectorAll(".menu-horizontal a");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      links.forEach(link => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("active");
+        });
+      });
+    });
+  </script>
   </header>
 
   <main>
