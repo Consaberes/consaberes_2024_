@@ -263,50 +263,125 @@
 
 
     </main>
-    <footer class="section-footer">
-      <address class="content-footer">
-        <ul class="list sede">
-          <li><h2>Sede A</h2></li>
-          <li>Carrera 51A Nº 26 - 38 sur</li>
-          <li>Localidad Puente Aranda - Barrio Alcalá</li>
-          <li>
-            <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            >
-          </li>
-          <li>
-            <a href="tel:+523002861876" class="af"
-              >+57 316 2380179 - 2380797280410</a
-            >
-          </li>
-        </ul>
-        <ul class="list sede">
-          <li><h2>Sede B-Francia</h2></li>
-          <li>Carrera 51c #33-41 Sur, Bogotá</li>
-          <li>Localidad Puente Aranda - Barrio Alcalá</li>
-          <li>
-            <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            >
-          </li>
-          <li>
-            <a href="tel:+523002861876" class="af">2380979 - fax:7112275</a>
-          </li>
-        </ul>
-        <ul class="list sede">
-          <li><h2>Sede C-Tayrona</h2></li>
-          <li>Calle 29 Sur #41 A-42, Bogotá</li>
-          <li>Localidad Puente Aranda - Santa Rita</li>
-          <li>
-            <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            >
-          </li>
-          <li>          
-              <li><a href="tel:+523002861876" class="af">2028525</a></li>  
-          </li>
-        </ul>
-      </address>
-    </footer>
+    <style>
+    :root {
+      --vinotinto: #800020;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .section-footer {
+      background-color: var(--vinotinto);
+      color: var(--white);
+      padding: 30px 20px;
+    }
+
+    .content-footer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 220px;
+    }
+
+    .list h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+    }
+
+    .list li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .af {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .af:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .content-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .list {
+        min-width: auto;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <footer class="section-footer">
+    <address class="content-footer">
+      <ul class="list sede">
+        <li><h2>Sede A</h2></li>
+        <li>Carrera 51A Nº 26 - 38 sur</li>
+        <li>Localidad Puente Aranda - Barrio Alcalá</li>
+        <li>
+          <a href="mailto:coldibenjaminherre16@educacionbogota.edu.co" class="af">
+            coldibenjaminherre16@educacionbogota.edu.co
+          </a>
+        </li>
+        <li>
+          <a href="tel:+573162380179" class="af">
+            +57 316 2380179 - 2380797280410
+          </a>
+        </li>
+      </ul>
+      <ul class="list sede">
+        <li><h2>Sede B - Francia</h2></li>
+        <li>Carrera 51c #33-41 Sur, Bogotá</li>
+        <li>Localidad Puente Aranda - Barrio Alcalá</li>
+        <li>
+          <a href="mailto:coldibenjaminherre16@educacionbogota.edu.co" class="af">
+            coldibenjaminherre16@educacionbogota.edu.co
+          </a>
+        </li>
+        <li>
+          <a href="tel:+573002861876" class="af">
+            2380979 - fax: 7112275
+          </a>
+        </li>
+      </ul>
+      <ul class="list sede">
+        <li><h2>Sede C - Tayrona</h2></li>
+        <li>Calle 29 Sur #41 A-42, Bogotá</li>
+        <li>Localidad Puente Aranda - Santa Rita</li>
+        <li>
+          <a href="mailto:coldibenjaminherre16@educacionbogota.edu.co" class="af">
+            coldibenjaminherre16@educacionbogota.edu.co
+          </a>
+        </li>
+        <li>
+          <a href="tel:+5730028525" class="af">
+            2028525
+          </a>
+        </li>
+      </ul>
+    </address>
+  </footer>
   </body>
 </html>
