@@ -52,6 +52,38 @@
   justify-content: space-between;
   gap: 50px;
 }
+.title-is {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  box-shadow: 1px 1px 8px var(--blue_college);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.title-is::before,
+.title-is::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  transition: opacity 2s ease-in-out;
+}
+
+.title-is::before {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    var(--red_college_dark) 45%,
+    var(--red_college_dark) 55%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  opacity: 1;
+}
 
 .title-is::after {
   background: linear-gradient(
