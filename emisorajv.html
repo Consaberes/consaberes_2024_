@@ -95,20 +95,114 @@
         </ul>
       </section>
 
-      <div class="menu3">
-        <ul class="menu-horizontal">
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./institucional.html">Nuestra Institución</a></li>
-          <li><a href="./noticias.html">Noticias</a></li>
-          <li><a href="./proyectos.html">Proyectos</a></li>
-          <li><a href="./emisora.html">Emisora</a></li>
-          <li><a href="./egresados.html">Egresados</a></li>
-          <li><a href="./library.html">Biblioteca digital</a></li>
-          <li><a href="./histotrias_destacadas.html">Historias Destacadas</a></li>
-          <li><a href="./teamours.html">Nuestro equipo</a></li>
-          <li><a href="PQR.html">PQR</a></li>
-        </ul>
-      </div>
+    <style>
+    :root {
+      --blue_college: #002244; /* Asegúrate de ajustar este color si ya lo tienes definido */
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .menu3 {
+      background: var(--blue_college);
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: var(--white);
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+
+    .menu-horizontal {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 100px;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .menu-horizontal > li > a {
+      display: block;
+      padding: 15px;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .menu-horizontal > li > a:hover {
+      background-color: rgb(236, 232, 232);
+      color: #020024;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .menu-horizontal {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--blue_college);
+        width: 100%;
+        margin: 0;
+      }
+
+      .menu-horizontal.show {
+        display: flex;
+      }
+
+      .menu-horizontal > li {
+        width: 100%;
+      }
+
+      .menu-horizontal > li > a {
+        font-size: 16px;
+        padding: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  </style>
+</head>
+
+
+  <div class="menu3">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <ul class="menu-horizontal" id="mainMenu">
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./institucional.html">Nuestra Institución</a></li>
+      <li><a href="./noticias.html">Noticias</a></li>
+      <li><a href="./proyectos.html">Proyectos</a></li>
+      <li><a href="./emisora.html">Emisora</a></li>
+      <li><a href="./egresados.html">Egresados</a></li>
+      <li><a href="./library.html">Biblioteca digital</a></li>
+      <li><a href="./histotrias_destacadas.html">Historias Destacadas</a></li>
+      <li><a href="./teamours.html">Nuestro equipo</a></li>
+      <li><a href="PQR.html">PQR</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainMenu").classList.toggle("show");
+    }
+  </script>
+
+
     </header>
     <main>
       <section class="emisora-radio-joven">
