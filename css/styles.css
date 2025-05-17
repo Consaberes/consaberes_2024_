@@ -183,32 +183,72 @@
   padding: 0;
 }
 
-.menu-horizontal {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
+.menu3 {
+  background: var(--blue_college);
+  margin: 0;
+  padding: 0;
 }
 
+/* Estilo base para pantallas grandes */
 .menu-horizontal {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  margin: 0 100px;
+  padding: 0;
+  flex-wrap: wrap;
 }
+
 .menu-horizontal > li > a {
   display: block;
-  justify-content: space-around;
-  padding: 15px 15px;
+  padding: 15px;
   color: var(--white);
   text-decoration: none;
   font-size: 14px;
+  text-align: center;
 }
 
 .menu-horizontal > li > a:hover {
   background-color: rgb(236, 232, 232);
   color: #020024;
 }
+
+/* -------- MEDIA QUERIES -------- */
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .menu-horizontal {
+    margin: 0 50px;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .menu-horizontal {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .menu-horizontal > li {
+    width: 100%;
+  }
+
+  .menu-horizontal > li > a {
+    font-size: 16px;
+    padding: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+  .menu-horizontal > li > a {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
 
 .menu-ident {
   display: flex;
