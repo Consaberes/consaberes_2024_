@@ -316,44 +316,41 @@
       </section>
     </main>
 
-    <footer class="section-footer">
+   <footer class="section-footer">
   <style>
     :root {
       --white: #ffffff;
       --blue_college: #003366;
+      --vinotinto: #8B0000;
     }
 
     .section-footer {
       background: var(--white);
       width: 100%;
       margin-top: 20px;
-      border: var(--white) 4px solid;
+      border-top: 10px solid orange; /* línea decorativa multicolor */
+      border-bottom: 10px solid orange;
       overflow: hidden;
-      padding: 20px;
+      padding-top: 0;
     }
 
-    .list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .menu-icon {
+    .social-bar {
+      background: var(--vinotinto);
+      padding: 10px 0;
       display: flex;
       justify-content: center;
-      gap: 15px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
     }
 
-    .icon {
+    .social-bar a svg {
       width: 30px;
       height: 30px;
-      fill: var(--blue_college);
+      fill: var(--white);
       transition: transform 0.3s;
     }
 
-    .icon:hover {
+    .social-bar a svg:hover {
       transform: scale(1.1);
     }
 
@@ -367,6 +364,7 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 2em;
+      padding: 20px;
     }
 
     .footer-bot {
@@ -409,32 +407,33 @@
     }
   </style>
 
-  <ul class="list content_row-reverse fondo">
-    <li class="menu-icon">
-      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FTecnicoIed" target="_blank">
-        <svg class="icon">
-          <use xlink:href="./images/icons.svg#twitterx"></use>
-        </svg>
-      </a>
-      <a href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la" target="_blank">
-        <svg class="icon">
-          <use xlink:href="./images/icons.svg#instagram"></use>
-        </svg>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=100068460205322" target="_blank">
-        <svg class="icon">
-          <use xlink:href="./images/icons.svg#facebook"></use>
-        </svg>
-      </a>
-      <a href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw" target="_blank">
-        <svg class="icon">
-          <use xlink:href="./images/icons.svg#youtube"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
+  <!-- Franja superior con íconos -->
+  <div class="social-bar">
+    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FTecnicoIed" target="_blank">
+      <svg class="icon">
+        <use xlink:href="./images/icons.svg#twitterx"></use>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la" target="_blank">
+      <svg class="icon">
+        <use xlink:href="./images/icons.svg#instagram"></use>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100068460205322" target="_blank">
+      <svg class="icon">
+        <use xlink:href="./images/icons.svg#facebook"></use>
+      </svg>
+    </a>
+    <a href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw" target="_blank">
+      <svg class="icon">
+        <use xlink:href="./images/icons.svg#youtube"></use>
+      </svg>
+    </a>
+  </div>
 
+  <!-- Contenido de las sedes -->
   <address class="content-footer">
+    <!-- sede A -->
     <ul class="list sede">
       <li>
         <a href="Sede-A.html"><button class="footer-bot">Sede A</button></a>
@@ -449,6 +448,7 @@
       </li>
     </ul>
 
+    <!-- sede B -->
     <ul class="list sede">
       <li>
         <a href="Sede-B.html"><button class="footer-bot">Sede B-Francia</button></a>
@@ -463,6 +463,7 @@
       </li>
     </ul>
 
+    <!-- sede C -->
     <ul class="list sede">
       <li>
         <a href="Sede-C.html"><button class="footer-bot">Sede C-Tayrona</button></a>
@@ -479,5 +480,3 @@
   </address>
 </footer>
 
-  </body>
-</html>
