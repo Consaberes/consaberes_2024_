@@ -95,125 +95,115 @@
         </ul>
       </section>
 
-     <style>
+    <style>
     :root {
-      --blue_college: #2f296d;
+       --blue_college: rgb(50, 44, 120); /* Asegúrate de ajustar este color si ya lo tienes definido */
       --white: #ffffff;
     }
 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
     }
 
     .menu3 {
       background: var(--blue_college);
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      border-radius: 0 0 8px 8px;
+      margin: 0;
+      padding: 0;
+      position: relative;
     }
 
-    .menu-toggle {
-      font-size: 22px;
-      cursor: pointer;
-      color: var(--white);
-      background: none;
-      border: 1px solid var(--white);
-      padding: 5px 10px;
-      border-radius: 5px;
+    .hamburger {
       display: none;
-      margin-right: 10px;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: var(--white);
+      padding: 15px 20px;
+      cursor: pointer;
     }
 
     .menu-horizontal {
       list-style: none;
       display: flex;
+      justify-content: space-around;
+      margin: 0 100px;
       padding: 0;
-      margin: 0;
       flex-wrap: wrap;
     }
 
-    .menu-horizontal li a {
+    .menu-horizontal > li > a {
       display: block;
-      padding: 10px 12px;
+      padding: 15px;
       color: var(--white);
       text-decoration: none;
       font-size: 14px;
-      transition: 0.3s;
+      text-align: center;
     }
 
-    .menu-horizontal li a:hover {
-      background: rgba(255, 255, 255, 0.9);
-      color: var(--blue_college);
-      border-radius: 5px;
+    .menu-horizontal > li > a:hover {
+      background-color: rgb(236, 232, 232);
+      color: #020024;
     }
 
+    /* Responsivo */
     @media (max-width: 768px) {
-      .menu3 {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .menu-toggle {
+      .hamburger {
         display: block;
       }
 
       .menu-horizontal {
+        display: none;
         flex-direction: column;
-        max-height: 0;
-        overflow: hidden;
+        align-items: center;
+        background-color: var(--blue_college);
         width: 100%;
-        transition: max-height 0.4s ease;
+        margin: 0;
       }
 
-      .menu-horizontal.active {
-        max-height: 500px;
+      .menu-horizontal.show {
+        display: flex;
       }
 
-      .menu-horizontal li a {
+      .menu-horizontal > li {
         width: 100%;
+      }
+
+      .menu-horizontal > li > a {
+        font-size: 16px;
+        padding: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
       }
     }
   </style>
 </head>
-<body>
+
 
   <div class="menu3">
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-    <ul class="menu-horizontal">
-      <li><a href="./index.html">Inicio</a></li>
-      <li><a href="./institucional.html">Nuestra Institución</a></li>
-      <li><a href="./noticias.html">Noticias</a></li>
-      <li><a href="./proyectos.html">Proyectos</a></li>
-      <li><a href="./emisora.html">Emisora</a></li>
-      <li><a href="./egresados.html">Egresados</a></li>
-      <li><a href="./library.html">Biblioteca digital</a></li>
-      <li><a href="./historias_destacadas.html">Historias Destacadas</a></li>
-      <li><a href="./teamours.html">Nuestro equipo</a></li>
-      <li><a href="./PQR.html">PQR</a></li>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <ul class="menu-horizontal" id="mainMenu">
+        <li><a href="./index-I.html">Start</a></li>
+        <li><a href="./institucional-I.html">Our Institution</a></li>
+        <li><a href="./noticias-I.html">News</a></li>
+        <li><a href="./proyectos-I.html">Projects</a></li>
+        <li><a href="./emisora-I.html">Station</a></li>
+        <li><a href="./Egresados-I.html">Graduates</a></li>
+        <li><a href="./library-I.html">Digital library</a></li>
+        <li><a href="./histotrias_destacadas-I.html">Featured Stories</a></li>
+        <li><a href="./teamours-I.html">Our team</a></li>
+        <li><a href="PQR-I.html">QCC</a></li>
     </ul>
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const toggle = document.querySelector(".menu-toggle");
-      const menu = document.querySelector(".menu-horizontal");
-
-      toggle.addEventListener("click", () => {
-        menu.classList.toggle("active");
-      });
-
-      menu.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-          menu.classList.remove("active");
-        });
-      });
-    });
+    function toggleMenu() {
+      document.getElementById("mainMenu").classList.toggle("show");
+    }
   </script>
-    </header>
+
+
+  </header>
 
     <main>
     <section class="container textos-centrados">
