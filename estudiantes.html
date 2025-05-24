@@ -381,83 +381,167 @@
         </ul>
       </div>
     </main>
-    <footer class="section-footer ">
-      <ul class="list content_row-reverse fondo ">
-        
-        <li class="menu-icon">
-          <svg class="icon">
-            <a
-              href="https://twitter.com/i/flow/login?redirect_after_login=%2FTecnicoIed"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#twitterx"></use>
-            </a>
-          </svg>
-          <svg class="icon">
-            <a
-              href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#instagram"></use>
-            </a>
-          </svg>
-          <svg class="icon">
-            <a
-              href="https://www.facebook.com/profile.php?id=100068460205322"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#facebook"></use>
-            </a>
-          </svg>
-          <svg class="icon">
-            <a
-              href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#youtube"></use>
-            </a>
-          </svg>
-        </li>
-      
-      </ul>
-      <address class="content-footer ">
-        <ul class="list sede ">
-          <li>
-          <button class="footer-bot">Sede A</button>
-          <p>Carrera 51A Nº 26 - 38 sur</p>
-          <p>Localidad Puente Aranda - Barrio Alcalá</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            ></p>
-          <p> <aB href="tel:+523002861876" class="af"
-              >+57 316 2380179 - 2380797280410</aB
-            ></p>
-          </li>
-        </ul>
-        <ul class="list sede sed_borde ">
-          <li>
-          <button class="footer-bot">Sede B-Francia</button>
-          <p>Carrera 51c #33-41 Sur, Bogotá</p>
-          <p>Localidad Puente Aranda - Barrio Alcalá</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            ></p>
-          <p> <a href="tel:+523002861876" class="af">2380979 - fax:7112275</a></p>
-          </li>
-        </ul>
-        <ul class="list sede ">
-          <li>
-          <button class="footer-bot">Sede C-Tayrona</button>
-          <p>Calle 29 Sur #41 A-42, Bogotá</p>
-          <p>Localidad Puente Aranda - Santa Rita</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-            ></p>
-          <p> <a href="tel:+523002861876" class="af">2028525</a></a></p>
-          </li>
-        </ul> 
-      </address>
-      </ul>
-    </footer>
+<footer class="section-footer">
+  <style>
+    :root {
+      --white-1: #ffffff;
+      --blue_college-1: #003366;
+      --vinotinto-1: #8B0000;
+    }
+    .section-footer {
+      background: var(--white-1);
+      width: 100%;
+      margin-top: 20px;
+      border-top: 10px solid orange; /* línea decorativa multicolor */
+      border-bottom: 10px solid orange;
+      overflow: hidden;
+      padding-top: 0;
+    }
+
+    .social-bar {
+      background: var(--vinotinto-1);
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .social-bar a svg {
+      width: 30px;
+      height: 30px;
+      fill: var(--white-1);
+      transition: transform 0.3s;
+    }
+
+    .social-bar a svg:hover {
+      transform: scale(1.1);
+    }
+
+    .content-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-family: ronoto, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 2em;
+      padding: 20px;
+    }
+
+    .footer-bot {
+      height: 40px;
+      width: 100%;
+      max-width: 400px;
+      font-size: 20px;
+      background-color: var(--white-1);
+      color: var(--blue_college-1);
+      border: 2px solid var(--blue_college-1);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .af {
+      color: var(--blue_college-1);
+      text-decoration: none;
+    }
+
+    .af:hover {
+      text-decoration: underline;
+    }
+
+    .sede {
+      max-width: 300px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .content-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-bot {
+        width: 90%;
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <!-- Franja superior con íconos -->
+  <div class="social-bar">
+    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FTecnicoIed" target="_blank">
+      <svg class="icon">
+        <use xlink:href="./images/icons.svg#twitterx"></use>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la" target="_blank">
+      <svg class="icon">
+        <use xlink:href="./images/icons.svg#instagram"></use>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100068460205322" target="_blank">
+      <svg class="icon">
+        <use xlink:href="./images/icons.svg#facebook"></use>
+      </svg>
+    </a>
+    <a href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw" target="_blank">
+      <svg class="icon">
+        <use xlink:href="./images/icons.svg#youtube"></use>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Contenido de las sedes -->
+  <address class="content-footer">
+    <!-- sede A -->
+    <ul class="list sede">
+      <li>
+        <a href="Sede-A.html"><button class="footer-bot">Sede A</button></a>
+        <p>Carrera 51A Nº 26 - 38 sur</p>
+        <p>Localidad Puente Aranda - Barrio Alcalá</p>
+        <p>
+          <a href="mailto:info@educacionbogota.com" class="af">coldibenjaminherre16@educacionbogota.edu.co</a>
+        </p>
+        <p>
+          <a href="tel:+573162380179" class="af">+57 316 2380179 - 2380797280410</a>
+        </p>
+      </li>
+    </ul>
+
+    <!-- sede B -->
+    <ul class="list sede">
+      <li>
+        <a href="Sede-B.html"><button class="footer-bot">Sede B-Francia</button></a>
+        <p>Carrera 51c #33-41 Sur, Bogotá</p>
+        <p>Localidad Puente Aranda - Barrio Alcalá</p>
+        <p>
+          <a href="mailto:info@educacionbogota.com" class="af">coldibenjaminherre16@educacionbogota.edu.co</a>
+        </p>
+        <p>
+          <a href="tel:+573002861876" class="af">2380979 - fax: 7112275</a>
+        </p>
+      </li>
+    </ul>
+
+    <!-- sede C -->
+    <ul class="list sede">
+      <li>
+        <a href="Sede-C.html"><button class="footer-bot">Sede C-Tayrona</button></a>
+        <p>Calle 29 Sur #41 A-42, Bogotá</p>
+        <p>Localidad Puente Aranda - Santa Rita</p>
+        <p>
+          <a href="mailto:info@educacionbogota.com" class="af">coldibenjaminherre16@educacionbogota.edu.co</a>
+        </p>
+        <p>
+          <a href="tel:+5730028525" class="af">2028525</a>
+        </p>
+      </li>
+    </ul>
+  </address>
+</footer>
   </body>
 </html>
