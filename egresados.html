@@ -9,91 +9,251 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" href="images/logo_colegio_64x64px.webp"  type="image/png">
   </head>
-  <body>
-    <header>
-      <div class="line">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #fff;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .menu .list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-horizontal-sup > li {
+      position: relative;
+      margin-right: 20px;
+    }
+
+    .menu-horizontal-sup > li > a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      display: block;
+    }
+
+    .menu-vertical-sup {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      display: none;
+      flex-direction: column;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+    }
+
+    .menu-vertical-sup li a {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      display: block;
+      white-space: nowrap;
+    }
+
+    .menu-horizontal-sup li:hover > .menu-vertical-sup {
+      display: flex;
+    }
+
+    .menu2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .menu-ident {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .menu-ident-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-ident-column h1 {
+      font-size: 1.5rem;
+      color: #222;
+    }
+
+    .menu-ident-column i {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .menu-icon {
+      display: flex;
+      gap: 10px;
+    }
+
+    .menu-icon a {
+      text-decoration: none;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      fill: #000;
+      transition: fill 0.3s;
+    }
+
+    .icon:hover {
+      fill: #555;
+    }
+
+    .btn-lang1,
+    .btn-lang2 {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      margin-left: 5px;
+      background-color: #ccc;
+      cursor: pointer;
+    }
+
+    /* 🌐 MEDIA QUERIES */
+    @media screen and (max-width: 768px) {
+      .line,
+      .menu2 {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-horizontal-sup {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-horizontal-sup > li {
+        margin: 10px 0;
+      }
+
+      .menu-icon {
+        justify-content: center;
+      }
+
+      .menu2 {
+        gap: 20px;
+        text-align: center;
+      }
+
+      .menu-ident {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .menu-ident-column h1 {
+        font-size: 1.2rem;
+      }
+
+      .btn-lang1,
+      .btn-lang2 {
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="line">
       <nav class="menu">
         <ul class="list menu-horizontal-sup">
           <li>
-            <a
-              href="http://rectoriabenjaminherrera.blogspot.com/"
-              target="_blank"
-              >Rectoria</a>
+            <a href="http://rectoriabenjaminherrera.blogspot.com/" target="_blank">Rectoría</a>
           </li>
-          <li> <a href="#">Sedes</a>
+          <li>
+            <a href="#">Sedes</a>
             <ul class="list menu-vertical-sup">
               <li><a href="Sede-A.html">A - Principal</a></li>
               <li><a href="Sede-B.html">B - Francia</a></li>
               <li><a href="Sede-C.html">C - Tayrona</a></li>
             </ul>
           </li>
-          <li><a href="./Tecnica.html">Técnica</a>
+          <li>
+            <a href="./Tecnica.html">Técnica</a>
             <ul class="list menu-vertical-sup">
               <li><a href="./Electricidad.html">Instalaciones eléctricas residenciales y comerciales</a></li>
               <li><a href="./Biotecnología.html">Biotecnología</a></li>
               <li><a href="./Diseñoarquitectónico.html">Diseño Arquitectónico</a></li>
-              </ul>
-          </li> 
+            </ul>
+          </li>
         </ul>
         <ul class="list">
           <li class="menu-icon">
-            <svg class="icon">
-              <a href="https://twitter.com/TecnicoIed" target="_blank">
-                <use href="./images/icons.svg#twitterx"></use>
-              </a>
-            </svg>
-            <svg class="icon">
-              <a
-                href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la"
-                target="_blank"
-              >
-                <use xlink:href="./images/icons.svg#instagram"></use>
-              </a>
-            </svg>
-            <svg class="icon">
-              <a
-                href="https://www.facebook.com/profile.php?id=100068460205322"
-                target="_blank"
-              >
-                <use xlink:href="./images/icons.svg#facebook"></use>
-              </a>
-            </svg>
-            <svg class="icon">
-              <a
-                href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw"
-                target="_blank"
-              >
-                <use xlink:href="./images/icons.svg#youtube"></use>
-              </a>
-            </svg>
+            <a href="https://twitter.com/TecnicoIed" target="_blank">
+              <svg class="icon"><use href="./images/icons.svg#twitterx"></use></svg>
+            </a>
+            <a href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la" target="_blank">
+              <svg class="icon"><use href="./images/icons.svg#instagram"></use></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100068460205322" target="_blank">
+              <svg class="icon"><use href="./images/icons.svg#facebook"></use></svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw" target="_blank">
+              <svg class="icon"><use href="./images/icons.svg#youtube"></use></svg>
+            </a>
           </li>
         </ul>
       </nav>
-    </div> 
-      <section class="menu2">
-        <ul class="list menu-ident">
-          <li>
-          <img src="./images/escudo.webp" width="100" height="100" alt="Escudo">
+    </div>
+
+    <section class="menu2">
+      <ul class="list menu-ident">
+        <li>
+          <img src="./images/escudo.webp" width="100" height="100" alt="Escudo" />
         </li>
-          <li class="menu-ident-column">
-            <h1>Colegio Técnico Benjamín Herrera I.E.D</h1>
-              <i>Educación e innovación para la trascendencia y la
-              transformación</i>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a href="./Egresados.html">
-            <button value="Español" class="btn-lang1">
-            </button>
-              </a>
-              <a href="./Egresados-I.html">
-            <button value="Inglés" class="btn-lang2">
-            </button>
-              </a>
-          </li>
-        </ul>
-      </section>
+        <li class="menu-ident-column">
+          <h1>Colegio Técnico Benjamín Herrera I.E.D</h1>
+          <i>Educación e innovación para la trascendencia y la transformación</i>
+        </li>
+      </ul>
+      <ul class="list">
+        <li>
+          <a href="./Egresados.html">
+            <button value="Español" class="btn-lang1"></button>
+          </a>
+          <a href="./Egresados-I.html">
+            <button value="Inglés" class="btn-lang2"></button>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </header>
+</body>
+</html>
 
     <style>
     :root {
