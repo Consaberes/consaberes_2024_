@@ -1,359 +1,256 @@
 <!DOCTYPE html>
-<html lang="es">
-    <title>
-        Benjamín Herrera Technical School I.E.D</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com; crossorigin" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="icon" href="images/logo_colegio_64x64px.webp"  type="image/png">
-</head>
-  <body>
-      <header>
-      <div class="line">
-          <nav class="menu">
-        <ul class="list menu-horizontal-sup">
-          <li>
-              <a
-              href="http://rectoriabenjaminherrera.blogspot.com/"
-              target="_blank"
-              >Rectory</a>
-            </li>
-          <li> <a href="#">Headquarters</a>
-            <ul class="list menu-vertical-sup">
-                <li><a href="Sede-A.html">A - Main</a></li>
-                <li><a href="Sede-B.html">B - France</a></li>
-                <li><a href="Sede-C.html">C - Tayrona</a></li>
-            </ul>
-        </li>
-        <li><a href="./Tecnica_ingles.html">Technique</a>
-            <ul class="list menu-vertical-sup">
-                <li><a href="./Electricidad_ingles.html">Residential and commercial electrical installations</a></li>
-                <li><a href="./Biotecnología_ingles.html">Biotechnology</a></li>
-              <li><a href="./Diseñoarquitectónico_ingles.html">
-                Architectural design</a></li>
-              </ul>
-          </li> 
-        </ul>
-        <ul class="list">
-          <li class="menu-icon">
-              <svg class="icon">
-              <a href="https://twitter.com/TecnicoIed" target="_blank">
-                  <use href="./images/icons.svg#twitterx"></use>
-              </a>
-            </svg>
-            <svg class="icon">
-              <a
-                href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la"
-                target="_blank"
-                >
-                <use xlink:href="./images/icons.svg#instagram"></use>
-            </a>
-        </svg>
-        <svg class="icon">
-              <a
-                href="https://www.facebook.com/profile.php?id=100068460205322"
-                target="_blank"
-              >
-              <use xlink:href="./images/icons.svg#facebook"></use>
-            </a>
-        </svg>
-        <svg class="icon">
-            <a
-            href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw"
-            target="_blank"
-            >
-            <use xlink:href="./images/icons.svg#youtube"></use>
-        </a>
-    </svg>
-</li>
-</ul>
-</nav>
-</div> 
-<section class="menu2">
-    <ul class="list menu-ident">
-        <li>
-            <img src="./images/escudo.webp" width="100" height="100" alt="Escudo">
-        </li>
-        <li class="menu-ident-column">
-            <h1>Benjamín Herrera Technical School I.E.D</h1>
-            <i>
-                Education and innovation for transcendence and
-                                transformation</i>
-            </li>
-        </ul>
-        <ul class="list">
-            <li>
-                <a href="./Egresados.html">
-                    <button value="Español" class="btn-lang1">
-                    </button>
-                </a>
-                <a href="./Egresados-I.html">
-                    <button value="Inglés" class="btn-lang2">
-                    </button>
-              </a>
-          </li>
-        </ul>
-    </section>
-    
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamín Herrera Technical School I.E.D</title>
+  <link rel="icon" href="images/logo_colegio_64x64px.webp" type="image/png" />
   <style>
     :root {
-           /* Asegúrate de ajustar este color si ya lo tienes definido */
+      --blue_college: #003366;
       --white: #ffffff;
+      --gray: #f5f5f5;
+      --dark: #222;
     }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: var(--gray); }
+
+    header { background: var(--white); width: 100%; }
+    .line, .menu2 {
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; padding: 10px;
     }
 
-    .menu3 {
-      background: var(--blue_college);
-      margin: 0;
-      padding: 0;
-      position: relative;
+    .menu .list {
+      list-style: none; display: flex; flex-wrap: wrap;
+      gap: 20px; padding: 0; margin: 0;
     }
 
+    .menu-horizontal-sup li { position: relative; }
+    .menu-horizontal-sup > li > a {
+      text-decoration: none; color: var(--dark); padding: 10px; display: block;
+    }
+
+    .menu-vertical-sup {
+      display: none; position: absolute; top: 100%; left: 0;
+      background: var(--white); box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 10;
+    }
+
+    .menu-horizontal-sup li:hover .menu-vertical-sup {
+      display: flex; flex-direction: column;
+    }
+
+    .menu-vertical-sup a {
+      padding: 10px; color: var(--dark); text-decoration: none;
+    }
+
+    .menu-icon { display: flex; gap: 10px; }
+    .icon {
+      width: 24px; height: 24px; fill: var(--dark);
+    }
+
+    .menu2 .menu-ident {
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    }
+
+    .menu-ident-column h1 { font-size: 1.5rem; }
+    .btn-lang1, .btn-lang2 {
+      width: 30px; height: 30px; border-radius: 50%;
+      border: none; background-color: #ccc; margin: 5px; cursor: pointer;
+    }
+
+    .menu3 { background: var(--blue_college); text-align: center; }
     .hamburger {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 30px;
-      color: var(--white);
-      padding: 15px 20px;
-      cursor: pointer;
+      display: none; background: none; border: none;
+      font-size: 30px; color: var(--white); padding: 15px; cursor: pointer;
     }
 
     .menu-horizontal {
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-      margin: 0 100px;
-      padding: 0;
-      flex-wrap: wrap;
+      display: flex; flex-wrap: wrap; justify-content: center;
+      list-style: none; padding: 0;
     }
 
-    .menu-horizontal > li > a {
-      display: block;
-      padding: 15px;
-      color: var(--white);
-      text-decoration: none;
-      font-size: 14px;
-      text-align: center;
+    .menu-horizontal li a {
+      color: var(--white); text-decoration: none; padding: 15px; display: block;
     }
 
-    .menu-horizontal > li > a:hover {
-      background-color: rgb(236, 232, 232);
-      color: #020024;
+    .menu-horizontal li a:hover {
+      background: #eee; color: var(--blue_college);
     }
 
-    /* Responsivo */
+    main .container { padding: 20px; }
+    .content_row {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+    }
+
+    .contenedor {
+      flex: 1 1 250px; max-width: 300px;
+    }
+
+    .contenedor figure { position: relative; overflow: hidden; margin: 0; }
+    .contenedor img { width: 100%; display: block; }
+
+    .capa {
+      position: absolute; bottom: 0; background: rgba(0,0,0,0.6);
+      color: white; width: 100%; text-align: center; padding: 10px;
+    }
+
+    footer {
+      background: #222; color: #fff; padding: 20px;
+    }
+
+    .section-footer ul { list-style: none; padding: 0; }
+
+    .section-footer .menu-icon {
+      display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;
+    }
+
+    .section-footer address {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 30px; text-align: left;
+    }
+
+    .sede { max-width: 250px; }
+
+    .footer-bot {
+      background-color: #444; color: white; border: none;
+      padding: 5px 10px; margin-bottom: 5px; font-weight: bold;
+    }
+
+    .af { color: #ddd; text-decoration: none; }
+
     @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
+      .hamburger { display: block; }
+      .menu-horizontal { display: none; flex-direction: column; }
+      .menu-horizontal.show { display: flex; }
 
-      .menu-horizontal {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--blue_college);
-        width: 100%;
-        margin: 0;
-      }
-
-      .menu-horizontal.show {
-        display: flex;
-      }
-
-      .menu-horizontal > li {
-        width: 100%;
-      }
-
-      .menu-horizontal > li > a {
-        font-size: 16px;
-        padding: 15px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-      }
+      .line, .menu2 { flex-direction: column; align-items: center; }
+      .menu-ident { flex-direction: column; text-align: center; }
+      .content_row { flex-direction: column; align-items: center; }
+      .contenedor { width: 90%; }
+      .section-footer address { flex-direction: column; align-items: center; }
     }
   </style>
-
-
-  <div class="menu3">
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
-
-       <ul class="menu-horizontal">
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-horizontal");
+      menu.classList.toggle("show");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="line">
+      <nav class="menu">
+        <ul class="list menu-horizontal-sup">
+          <li><a href="https://rectoriabenjaminherrera.blogspot.com/" target="_blank">Rectory</a></li>
+          <li><a href="#">Headquarters</a>
+            <ul class="list menu-vertical-sup">
+              <li><a href="Sede-A.html">A - Main</a></li>
+              <li><a href="Sede-B.html">B - France</a></li>
+              <li><a href="Sede-C.html">C - Tayrona</a></li>
+            </ul>
+          </li>
+          <li><a href="./Tecnica_ingles.html">Technique</a>
+            <ul class="list menu-vertical-sup">
+              <li><a href="./Electricidad_ingles.html">Electrical Installations</a></li>
+              <li><a href="./Biotecnología_ingles.html">Biotechnology</a></li>
+              <li><a href="./Diseñoarquitectónico_ingles.html">Architectural Design</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="list menu-icon">
+          <li><a href="#"><svg class="icon"><use href="./images/icons.svg#twitterx"></use></svg></a></li>
+          <li><a href="#"><svg class="icon"><use href="./images/icons.svg#instagram"></use></svg></a></li>
+          <li><a href="#"><svg class="icon"><use href="./images/icons.svg#facebook"></use></svg></a></li>
+          <li><a href="#"><svg class="icon"><use href="./images/icons.svg#youtube"></use></svg></a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="menu2">
+      <ul class="list menu-ident">
+        <li><img src="./images/escudo.webp" width="100" height="100" alt="Escudo"></li>
+        <li class="menu-ident-column">
+          <h1>Benjamín Herrera Technical School I.E.D</h1>
+          <i>Education and innovation for transcendence and transformation</i>
+        </li>
+      </ul>
+      <ul class="list">
+        <li>
+          <a href="./Egresados.html"><button class="btn-lang1" title="Español"></button></a>
+          <a href="./Egresados-I.html"><button class="btn-lang2" title="English"></button></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu3">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="menu-horizontal">
         <li><a href="./index-I.html">Start</a></li>
         <li><a href="./institucional-I.html">Our Institution</a></li>
         <li><a href="./noticias-I.html">News</a></li>
         <li><a href="./proyectos-I.html">Projects</a></li>
         <li><a href="./emisora-I.html">Station</a></li>
         <li><a href="./Egresados-I.html">Graduates</a></li>
-        <li><a href="./library-I.html">Digital library</a></li>
+        <li><a href="./library-I.html">Digital Library</a></li>
         <li><a href="./histotrias_destacadas-I.html">Featured Stories</a></li>
-        <li><a href="./teamours-I.html">Our team</a></li>
+        <li><a href="./teamours-I.html">Our Team</a></li>
         <li><a href="PQR-I.html">QCC</a></li>
       </ul>
-  </div>
-</header>
-<main>
-    <section class="container">
-        
-        <ul class="content_row list">
-            <li class="contenedor">
-                <a href="https://www.elempleo.com/co/ofertas-empleo/bogota">
-                    <figure>
-                        <img src="images/ofertas_laborales.webp" alt="horario">
-                        <div class="capa">
-                            <h3>Job Offers</h3>
-                        </div>
-                    </figure>
-                </a>
-            </li>    
-            
-            
-            <li class="contenedor">
-                <a href="nuestras promociones.html">
-                    <figure>
-                        <img src="images/estudiantes-gradundose.webp"  alt="inasistencias" >
-                        <div class="capa">
-                            <h3>Our promotions</h3>
-                        </div>
-                </figure>
-            </a>
-        </li>    
-
-        <li class="contenedor">
-            <a href="https://www.universityguru.com/es/universidades-bogota">
-                <figure>
-                    <img src="images/imagen-de-ofertas-universitarias-.webp"  alt="citaciones" >
-                    <div class="capa">
-                        <h3>University offers</h3>
-                    </div>
-                </figure>
-            </a>
-          </li>
-        </ul>
-
-
-        <ul class="content_row list">
-            <li class="contenedor">
-                <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/">
-                    <figure>
-                        <img src="images/cena.webp" alt="Humanities" >
-                        <div class="capa">
-                            <h3> Offers with SENA</h3>
-                        </div>
-                    </figure>
-                </a>
-            </li>    
-            
-            <li class="contenedor">
-                <a href="nuestros egresados.html">
-                    <figure>
-                        <img src="images/humano-trabajando-con-corbata-en-pc.webp"  alt="Math" >
-                        <div class="capa">
-                            <h3>Our Graduates</h3>
-                        </div>
-                    </figure>
-                </a>
-            </li>    
-            
-            <li class="contenedor">
-                <a href="estudiantes destacados.html">
-                    <figure>
-                        <img src="images/estudiante-destacado.webp"  alt="Lost objects">
-                        <div class="capa">
-                            <h3>Featured Students</h3>
-                        </div>
-                    </figure>
-                </a>
-            </li>
-        </ul>
     </div>
+  </header>
 
-      <div class=""></div>
-    </section>
-    </main>
-    <footer class="section-footer ">
-      <ul class="list content_row-reverse fondo ">
-        
-          <li class="menu-icon">
-              <svg class="icon">
-                  <a
-                  href="https://twitter.com/i/flow/login?redirect_after_login=%2FTecnicoIed"
-              target="_blank"
-            >
-              <use xlink:href="./images/icons.svg#twitterx"></use>
-            </a>
-          </svg>
-          <svg class="icon">
-              <a
-              href="https://www.instagram.com/explore/locations/587304262/colegio-tecnico-benjamin-herrera/?hl=es-la"
-              target="_blank"
-              >
-              <use xlink:href="./images/icons.svg#instagram"></use>
-            </a>
-        </svg>
-        <svg class="icon">
-            <a
-            href="https://www.facebook.com/profile.php?id=100068460205322"
-            target="_blank"
-            >
-            <use xlink:href="./images/icons.svg#facebook"></use>
-        </a>
-    </svg>
-    <svg class="icon">
-        <a
-        href="https://www.youtube.com/channel/UClUoMMpz80p3FMnFezyMSNw"
-        target="_blank"
-        >
-        <use xlink:href="./images/icons.svg#youtube"></use>
-    </a>
-</svg>
+  <main>
+    <section class="container">
+      <ul class="content_row list">
+        <li class="contenedor">
+          <a href="https://www.elempleo.com/co/ofertas-empleo/bogota">
+            <figure>
+              <img src="images/ofertas_laborales.webp" alt="Job Offers">
+              <div class="capa"><h3>Job Offers</h3></div>
+            </figure>
+          </a>
         </li>
-        
+        <li class="contenedor">
+          <a href="nuestras promociones.html">
+            <figure>
+              <img src="images/estudiantes-gradundose.webp" alt="Our promotions">
+              <div class="capa"><h3>Our promotions</h3></div>
+            </figure>
+          </a>
+        </li>
+        <li class="contenedor">
+          <a href="https://www.universityguru.com/es/universidades-bogota">
+            <figure>
+              <img src="images/imagen-de-ofertas-universitarias-.webp" alt="University offers">
+              <div class="capa"><h3>University offers</h3></div>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="section-footer">
+    <ul class="list content_row-reverse fondo">
+      <li class="menu-icon">
+        <a href="#"><svg class="icon"><use href="./images/icons.svg#twitterx"></use></svg></a>
+        <a href="#"><svg class="icon"><use href="./images/icons.svg#instagram"></use></svg></a>
+        <a href="#"><svg class="icon"><use href="./images/icons.svg#facebook"></use></svg></a>
+        <a href="#"><svg class="icon"><use href="./images/icons.svg#youtube"></use></svg></a>
+      </li>
     </ul>
-      <address class="content-footer ">
-        <ul class="list sede ">
-          <li>
+    <address class="content-footer">
+      <ul class="list sede">
+        <li>
           <button class="footer-bot">Headquarters A</button>
           <p>Carrera 51A Nº 26 - 38 sur</p>
-          <p>Localidad Puente Aranda - Barrio Alcalá</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-              >coldibenjaminherre16@educacionbogota.edu.co</a
-              ></p>
-              <p> <aB href="tel:+523002861876" class="af"
-                >+57 316 2380179 - 2380797280410</aB
-                ></p>
-            </li>
-        </ul>
-        <ul class="list sede sed_borde ">
-            <li>
-                <button class="footer-bot">Headquarters B-France</button>
-                <p>Carrera 51c #33-41 Sur, Bogotá</p>
-                <p>Localidad Puente Aranda - Barrio Alcalá</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-            >coldibenjaminherre16@educacionbogota.edu.co</a
-            ></p>
-            <p> <a href="tel:+523002861876" class="af">2380979 - fax:7112275</a></p>
+          <p>Puente Aranda - Alcalá</p>
+          <p><a href="mailto:info@educacionbogota.com" class="af">coldibenjaminherre16@educacionbogota.edu.co</a></p>
+          <p><a href="tel:+573162380179" class="af">+57 316 2380179</a></p>
         </li>
-    </ul>
-    <ul class="list sede ">
-        <li>
-            <button class="footer-bot">Headquarters C-Tayrona</button>
-            <p>Calle 29 Sur #41 A-42, Bogotá</p>
-            <p>Localidad Puente Aranda - Santa Rita</p>
-          <p> <a href="mailto:info@educacionbogota.com" class="af"
-            >coldibenjaminherre16@educacionbogota.edu.co</a
-            ></p>
-            <p> <a href="tel:+523002861876" class="af">2028525</a></a></p>
-        </li>
-    </ul> 
-</address>
-</ul>
-</footer>
+      </ul>
+    </address>
+  </footer>
 </body>
 </html>
-<head>
