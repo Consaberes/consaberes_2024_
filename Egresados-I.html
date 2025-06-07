@@ -12,7 +12,6 @@
       --gray: #f5f5f5;
       --dark: #222;
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Arial, sans-serif; background: var(--gray); }
 
@@ -21,39 +20,31 @@
       display: flex; justify-content: space-between;
       align-items: center; flex-wrap: wrap; padding: 10px;
     }
-
     .menu .list {
       list-style: none; display: flex; flex-wrap: wrap;
       gap: 20px; padding: 0; margin: 0;
     }
-
     .menu-horizontal-sup li { position: relative; }
     .menu-horizontal-sup > li > a {
       text-decoration: none; color: var(--dark); padding: 10px; display: block;
     }
-
     .menu-vertical-sup {
       display: none; position: absolute; top: 100%; left: 0;
       background: var(--white); box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 10;
     }
-
     .menu-horizontal-sup li:hover .menu-vertical-sup {
       display: flex; flex-direction: column;
     }
-
     .menu-vertical-sup a {
       padding: 10px; color: var(--dark); text-decoration: none;
     }
-
     .menu-icon { display: flex; gap: 10px; }
     .icon {
       width: 24px; height: 24px; fill: var(--dark);
     }
-
     .menu2 .menu-ident {
       display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
     }
-
     .menu-ident-column h1 { font-size: 1.5rem; }
     .btn-lang1, .btn-lang2 {
       width: 30px; height: 30px; border-radius: 50%;
@@ -65,16 +56,13 @@
       display: none; background: none; border: none;
       font-size: 30px; color: var(--white); padding: 15px; cursor: pointer;
     }
-
     .menu-horizontal {
       display: flex; flex-wrap: wrap; justify-content: center;
       list-style: none; padding: 0;
     }
-
     .menu-horizontal li a {
       color: var(--white); text-decoration: none; padding: 15px; display: block;
     }
-
     .menu-horizontal li a:hover {
       background: #eee; color: var(--blue_college);
     }
@@ -83,14 +71,11 @@
     .content_row {
       display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
     }
-
     .contenedor {
       flex: 1 1 250px; max-width: 300px;
     }
-
     .contenedor figure { position: relative; overflow: hidden; margin: 0; }
     .contenedor img { width: 100%; display: block; }
-
     .capa {
       position: absolute; bottom: 0; background: rgba(0,0,0,0.6);
       color: white; width: 100%; text-align: center; padding: 10px;
@@ -99,37 +84,32 @@
     footer {
       background: #222; color: #fff; padding: 20px;
     }
-
     .section-footer ul { list-style: none; padding: 0; }
-
     .section-footer .menu-icon {
       display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;
     }
-
     .section-footer address {
       display: flex; flex-wrap: wrap; justify-content: center;
       gap: 30px; text-align: left;
     }
-
     .sede { max-width: 250px; }
-
     .footer-bot {
       background-color: #444; color: white; border: none;
       padding: 5px 10px; margin-bottom: 5px; font-weight: bold;
     }
-
     .af { color: #ddd; text-decoration: none; }
 
     @media (max-width: 768px) {
       .hamburger { display: block; }
       .menu-horizontal { display: none; flex-direction: column; }
       .menu-horizontal.show { display: flex; }
-
       .line, .menu2 { flex-direction: column; align-items: center; }
       .menu-ident { flex-direction: column; text-align: center; }
       .content_row { flex-direction: column; align-items: center; }
       .contenedor { width: 90%; }
-      .section-footer address { flex-direction: column; align-items: center; }
+      .section-footer address {
+        flex-direction: column; align-items: center;
+      }
     }
   </style>
   <script>
@@ -199,7 +179,6 @@
       </ul>
     </div>
   </header>
-
   <main>
     <section class="container">
       <ul class="content_row list">
@@ -230,14 +209,13 @@
       </ul>
     </section>
   </main>
-
   <footer class="section-footer">
     <ul class="list content_row-reverse fondo">
       <li class="menu-icon">
-        <a href="#"><svg class="icon"><use href="./images/icons.svg#twitterx"></use></svg></a>
-        <a href="#"><svg class="icon"><use href="./images/icons.svg#instagram"></use></svg></a>
-        <a href="#"><svg class="icon"><use href="./images/icons.svg#facebook"></use></svg></a>
-        <a href="#"><svg class="icon"><use href="./images/icons.svg#youtube"></use></svg></a>
+        <a href="#"><svg class="icon"><use xlink:href="./images/icons.svg#twitterx"></use></svg></a>
+        <a href="#"><svg class="icon"><use xlink:href="./images/icons.svg#instagram"></use></svg></a>
+        <a href="#"><svg class="icon"><use xlink:href="./images/icons.svg#facebook"></use></svg></a>
+        <a href="#"><svg class="icon"><use xlink:href="./images/icons.svg#youtube"></use></svg></a>
       </li>
     </ul>
     <address class="content-footer">
