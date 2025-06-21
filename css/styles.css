@@ -156,12 +156,11 @@
 
 .menu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-around;
+  padding: 20px;
   background-color: var(--white);
-  margin-left: 100px;
-  margin-right: 100px;
   font-family: roboto;
 }
 .line {
@@ -174,9 +173,7 @@
   align-items: center;
   justify-content: space-around;
   background-color: var(--white);
-  margin-left: 100px;
-  /*margin-right: 5px;*/
-  padding: 5px;
+  padding: 20px;
   height: 170px;
 }
 .menu3 {
