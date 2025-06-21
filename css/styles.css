@@ -1042,8 +1042,6 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 .menu-horizontal-sup {
   list-style: none;
