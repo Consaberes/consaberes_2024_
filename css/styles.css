@@ -308,7 +308,7 @@
   display: flex;
   width: 32px;
   height: 32px;
-  background-image: url(../images/es.jpg);
+  background-image: url(../images/es.webp);
   border: none;
   cursor: pointer;
 }
@@ -316,7 +316,7 @@
   display: flex;
   width: 32px;
   height: 32px;
-  background-image: url(../images/en.jpg);
+  background-image: url(../images/en.webp);
   border: none;
   cursor: pointer;
 }
