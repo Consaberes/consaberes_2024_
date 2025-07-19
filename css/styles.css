@@ -873,6 +873,7 @@ a {
 .pg {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 50px;
   align-content: space-between;
   align-items: center;
@@ -884,7 +885,7 @@ a {
   align-content: space-between;
   align-items: center;
   margin-top: 50px;
-  padding: 20px 0px;
+  padding: 5px 40px;
 }
 /*-----------------------------------*/
 .content-botone {
