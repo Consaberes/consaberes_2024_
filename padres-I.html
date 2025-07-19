@@ -96,73 +96,85 @@
         </ul>
       </section>
 
-     <style>
-    :root {
-      --white-1: #ffffff;
-      --blue_college-1: #003366;
-      --vinotinto-1: #8B0000;
+    
+   <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
 
-    .social-bar {
-      background: var(--vinotinto-1);
-      padding: 10px 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      align-items: center;
+    .menu3 {
+      background: var(--blue_college);
+      margin: 0;
+      padding: 0;
+      position: relative;
     }
 
-    .social-bar a svg {
-      width: 30px;
-      height: 30px;
-      fill: var(--white-1);
-      transition: transform 0.3s;
-    }
-
-    .social-bar a svg:hover {
-      transform: scale(1.1);
-    }
- 
-
-    .footer-bot {
-      height: 40px;
-      width: 100%;
-      max-width: 400px;
-      font-size: 20px;
-      background-color: var(--white-1);
-      color: var(--blue_college-1);
-      border: 2px solid var(--blue_college-1);
-      border-radius: 8px;
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: var(--white);
+      padding: 15px 20px;
       cursor: pointer;
     }
 
-    .af {
-      color: var(--blue_college-1);
+    .menu-horizontal {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 100px;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .menu-horizontal > li > a {
+      display: block;
+      padding: 15px;
+      color: var(--white);
       text-decoration: none;
+      font-size: 14px;
+      text-align: center;
     }
 
-    .af:hover {
-      text-decoration: underline;
+    .menu-horizontal > li > a:hover {
+      background-color: rgb(236, 232, 232);
+      color: #020024;
     }
 
-    .sede {
-      max-width: 300px;
-    }
-
-    /* RESPONSIVE */
+    /* Responsivo */
     @media (max-width: 768px) {
-      .content-footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      .hamburger {
+        display: block;
       }
 
-      .footer-bot {
-        width: 90%;
-        font-size: 18px;
+      .menu-horizontal {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--blue_college);
+        width: 100%;
+        margin: 0;
+      }
+
+      .menu-horizontal.show {
+        display: flex;
+      }
+
+      .menu-horizontal > li {
+        width: 100%;
+      }
+
+      .menu-horizontal > li > a {
+        font-size: 16px;
+        padding: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
       }
     }
   </style>
+
 
 
   <div class="menu3">
