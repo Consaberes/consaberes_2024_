@@ -398,7 +398,7 @@
   padding: 10px;
 }
 .section-footer {
-  background: var(--white-1);
+  background: var(--white);
   width: 100%;
   margin-top: 20px;
   border-top: 10px solid orange; /* línea decorativa multicolor */
@@ -406,7 +406,23 @@
   overflow: hidden;
   padding-top: 0;
 }
-
+.social-bar {
+   background: var(--red_college_dark);
+   padding: 10px 0;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   align-items: center;
+ }
+ .social-bar a svg {
+   width: 30px;
+   height: 30px;
+   fill: var(--white);
+   transition: transform 0.3s;
+ }
+ .social-bar a svg:hover {
+   transform: scale(1.1);
+  }
 .content-footer {
   display: flex;
   justify-content: center;
@@ -421,6 +437,20 @@
 .af {
   color: var(--blue_college);
 }
+ @media (max-width: 768px) {
+  .content-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-bot {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+.af:hover {
+      text-decoration: underline;
+    }
 .content-programs {
   display: flex;
   flex-direction: row;
@@ -767,6 +797,7 @@ a {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
+  max-width: 300px;
 }
 
 .pol {
@@ -1580,10 +1611,14 @@ a {
 }
 .footer-bot {
   height: 40px;
-  width: 400px;
-  font-size: 30px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 20px;
   background-color: var(--white);
   color: var(--blue_college);
+  border: 2px solid var(--blue_college);
+  border-radius: 8px;
+  cursor: pointer;
 }
 .sed_borde {
   border-left: 5px solid;
