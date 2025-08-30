@@ -114,28 +114,88 @@
 
   </header>
   <main>
-  <section class="container">
-        <ul class="list subtitles">
-          <li><h2 class="btninst-text">Emisoras</h2></li>
-        </ul>
-        <section class="section-areas" >
+    <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Contenedor del main */
+    main {
+      padding: 20px;
+    }
+
+    /* Título principal */
+    .btninst-text {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Sección de las emisoras */
+    .section-areas ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; /* Hace que los elementos se ajusten a la pantalla */
+      padding: 0;
+      list-style: none;
+    }
+
+    .section-areas li {
+      flex: 1 1 45%; /* Cada item ocupa un 45% del ancho */
+      margin: 15px;
+      text-align: center;
+    }
+
+    /* Imágenes Responsivas */
+    .responsive-img {
+      width: 100%;  /* Asegura que la imagen ocupe el 100% del contenedor */
+      height: auto;  /* Mantiene la relación de aspecto de la imagen */
+      max-width: 400px; /* Tamaño máximo para la imagen */
+    }
+
+    /* Ajustes para pantallas más pequeñas */
+    @media (max-width: 768px) {
+      .section-areas li {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada item ocupa el 100% */
+      }
+
+      .btninst-text {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+   <section class="container">
+      <ul class="list subtitles">
+        <li><h2 class="btninst-text">Emisoras</h2></li>
+      </ul>
+      <section class="section-areas">
         <ul class="list al-aire">
           <li>
-        <button>
-          <a target="_blank" href="https://sites.google.com/view/benjamin-al-aire-emisora-virtu/inicio">
-          <img  src="images/logo_benjamín_al_aire.webp" width="400px" height="400px"></a>
-        </button>
-          <h2 class="center" >Benjamín Al Aire </h2>
-        </li>
-      <li>
-        <button>
-          <a target="_blank" href="./Emisora_radiojoven.html">
-          <img  src="images/r_joven.webp" width="400px" height="400px"></a>
-        </button>
-        <h2 class="center">RadioTek BH </h2>
-      </li>
-      </ul>
-  </section>
+            <button>
+              <a target="_blank" href="https://sites.google.com/view/benjamin-al-aire-emisora-virtu/inicio">
+                <img src="images/logo_benjamín_al_aire.webp" alt="Benjamín Al Aire" class="responsive-img">
+              </a>
+            </button>
+            <h2>Benjamín Al Aire</h2>
+          </li>
+          <li>
+            <button>
+              <a target="_blank" href="./Emisora_radiojoven.html">
+                <img src="images/r_joven.webp" alt="RadioTek BH" class="responsive-img">
+              </a>
+            </button>
+            <h2>RadioTek BH</h2>
+          </li>
+        </ul>
+      </section>
+    </section>
   </main>
 
   <footer class="section-footer">
