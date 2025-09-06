@@ -183,7 +183,7 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 10px;
   justify-content: space-around;
   padding: 20px;
   background-color: var(--white);
