@@ -298,7 +298,7 @@
   list-style: none;
   justify-content: left;
   justify-items: center;
-  font-size: clamp(1rem , 0.5vw , 2rem);
+  font-size: clamp(0.8rem , 0.5vw , 1.5rem);
   gap: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
