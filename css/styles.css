@@ -209,7 +209,7 @@
   background-color: var(--white);
   height: 160px;
   margin-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 .menu3 {
   background: var(--blue_college);
@@ -316,7 +316,7 @@
   list-style: none;
   justify-content: left;
   justify-items: center;
-  font-size: clamp(1rem , 0.5vw , 2rem);
+  font-size: clamp(0.7rem, 2vw, 1rem);
   gap: 5px;
 
   width: 100%;
@@ -975,11 +975,12 @@ a {
 .pg-img {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  width: 180px;
+  height: 200px;
+  gap: 40px;
   align-content: space-between;
   align-items: center;
-  margin-top: 50px;
-  padding: 5px 40px;
+  padding: 14px 40px;
 }
 /*-----------------------------------*/
 .content-botone {
