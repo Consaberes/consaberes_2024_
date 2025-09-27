@@ -24,10 +24,11 @@
   padding: 5px;
 }
 .ola {
-  width: 50%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 10px;
+  text-align: justify; 
   padding: 2px;
-  font-size: clamp(1.5rem , 0.5vw , 1rem);
+  font-size: clamp(1rem , 3vw , 1.3rem);
 }
 .content_row {
   display: flex;
@@ -46,6 +47,13 @@
   justify-content: center;
   gap: 10px;
 }
+.content_column_align-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .content-wrap {
   display: flex;
@@ -199,8 +207,9 @@
   align-items: center;
   justify-content: space-around;
   background-color: var(--white);
-  padding: 20px;
-  height: 170px;
+  height: 160px;
+  margin-bottom: 10px;
+  padding-left: 30px;
 }
 .menu3 {
   background: var(--blue_college);
@@ -248,9 +257,19 @@
 }
 
 /* -------- MEDIA QUERIES -------- */
-
+/*
 /* Pantallas medianas (tablets) */
     @media (max-width: 768px) {
+      .menu2{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-around;
+       background-color: var(--white);
+       height: 160px;
+       margin-bottom: 10px;
+       padding-left: 0%;
+      }
       .hamburger {
         display: block;
       }
@@ -287,9 +306,8 @@
   justify-content: left;
   align-items: center;
   gap: 15px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   width: 100%;
+  padding: 5px;
 }
 
 .menu-ident-column {
@@ -298,10 +316,9 @@
   list-style: none;
   justify-content: left;
   justify-items: center;
-  font-size: clamp(0.8rem , 0.5vw , 1.5rem);
+  font-size: clamp(1rem , 0.5vw , 2rem);
   gap: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+
   width: 100%;
 }
 
@@ -1563,7 +1580,6 @@ a {
   flex-wrap: wrap;
   gap: 4px;
   align-content: space-between;
-  align-items: center;
 }
 
 .letters_tec {
@@ -1582,11 +1598,12 @@ a {
   overflow: hidden;
   border-radius: 15px;
 }
+
 .contenedor_tec figure {
   position: relative;
   height: 250px;
   cursor: pointer;
-  width: 350px;
+  width: 250px;
   overflow: hidden;
   border-radius: 6px;
   box-shadow: 6px 6px 6px rgba(233, 230, 230, 0.5);
@@ -1807,6 +1824,7 @@ a {
 .controls {
   text-align: center;
   margin-top: 10px;
+  
 }
 
 .control-btn {
