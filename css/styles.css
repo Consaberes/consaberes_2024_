@@ -193,16 +193,18 @@
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
   gap: 10px;
   justify-content: space-around;
-  padding: 20px;
-  background-color: var(--white);
+  padding: 10px;
+  background: #ffffff;
+  background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(235, 14, 14, 1) 0%, rgba(181, 4, 4, 0.83) 6%, rgba(255, 255, 255, 1) 78%);
   font-family: roboto;
-}
-.line {
   border-bottom: 1px solid var(--gray_college);
 }
+
 
 .menu2 {
   display: flex;
@@ -272,6 +274,9 @@
        height: 160px;
        margin-bottom: 10px;
        padding-left: 0%;
+      }
+      .menu{
+        height: auto;
       }
       .hamburger {
         display: block;
