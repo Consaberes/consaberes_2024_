@@ -20,8 +20,8 @@
 .container {
   width: 80%;
   margin: 0 auto;
+  background-color: var(--silver);
   box-shadow: 0px 0px 5px rgb(220, 220, 223);
-  padding: 5px;
 }
 .ola {
   width: 60%;
@@ -679,7 +679,7 @@
 }
 
 main {
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Responsive CSS */
@@ -1781,6 +1781,7 @@ a {
 
 /**/
 .slider-container {
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
