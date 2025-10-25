@@ -198,10 +198,8 @@
   gap: 10px;
   justify-content: space-around;
   padding: 10px;
-  background: #ffffff;
-  background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(235, 14, 14, 1) 0%, rgba(181, 4, 4, 0.83) 6%, rgba(255, 255, 255, 1) 78%);
-  font-family: roboto;
-  border-bottom: 1px solid var(--gray_college);
+  background: #9e0303;
+  background: linear-gradient(180deg, rgba(158, 3, 3, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
 }
 
 
