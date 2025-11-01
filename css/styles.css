@@ -1136,27 +1136,38 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  background-color: var(--blue_college);
 }
-.menu-horizontal-sup > li > a {
+.borderxd{
+    padding: 3px 2px;
+/*  border-top: var(--red_collage_m) 2px groove;*/
+  border-left: var(--blue_college) 2px ridge;
+  border-right: var(--blue_college) 2px inset;
+  border-bottom: var(--blue_college) 2px outset;
+  border-radius: 0px 0px 10px 10px;
+  height: 30px;
+  margin: 10px;
+  margin-top: 20px;
+}
+.menu-horizontal-sup > li > a { 
   display: block;
-  padding: 15px 10px;
+  padding: 10px 10px;
   text-decoration: none;
-  color: var(--white);
+  color: var(--color_text); 
   font-size: 14px;
 }
 
 .menu-horizontal-sup > li :hover {
-  background-color: var(--silver);
-  /*border-radius: 5px;*/
-  color: var(--color_text);
+  background-color: var(--blue_college);
+  border-radius: 0px 0px 10px 10px;
+  height: 13px;
+  color: var(--white);
 }
 .menu-vertical-sup {
   position: absolute;
   display: none;
   list-style: none;
   width: 200px;
-  background-color: var(--blue_college);
+  background-color: var(--gray_college);
   font-size: 14px;
 }
 .menu-horizontal-sup li:hover .menu-vertical-sup {
@@ -1164,12 +1175,13 @@ a {
 }
 .menu-vertical-sup li:hover {
   background-color: var(--blue_college);
+
 }
 .menu-vertical-sup li a {
   display: block;
   color: white;
   padding: 15px 15px 15px 20px;
-  background-color: var(--blue_college);
+  background-color: var(--gray_college);
 }
 .menu-vertical-sup > li :hover {
   background-color: var(--silver);
