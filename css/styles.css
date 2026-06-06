@@ -1,3 +1,4 @@
+
 :root {
   --blue_college: rgba(14, 4, 123, 1);
   --red_college: rgb(227, 6, 19);
@@ -157,13 +158,17 @@
 
 .section-areas li {
    flex: 1 1 45%; /* Cada item ocupa un 45% del ancho */
-   margin: 15px;
-   text-align: center;
- }
+  margin: 15px;
+  text-align: center;
+}
 .responsive-img {
   width: 100%;  
   height: auto;  
   max-width: 400px; 
+}
+.responsive-img2 {
+  width: 400px;  
+  height: 400px;  
 }
 @media (max-width: 768px) {
   .section-areas li {
@@ -469,13 +474,13 @@
    align-items: center;
  }
  .social-bar a svg {
-   width: 30px;
-   height: 30px;
-   fill: var(--white);
-   transition: transform 0.3s;
- }
- .social-bar a svg:hover {
-   transform: scale(1.1);
+  width: 30px;
+  height: 30px;
+  fill: var(--white);
+  transition: transform 0.3s;
+}
+  .social-bar a svg:hover {
+  transform: scale(1.1);
   }
 .content-footer {
   display: flex;
@@ -506,11 +511,11 @@
 .af:hover {
       text-decoration: underline;
     }
-.content-programs {
+/*.content-programs {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-}
+}*/
 
 .a {
   text-decoration: none;
@@ -1138,12 +1143,9 @@ a {
   justify-content: space-around;
 }
 .borderxd{
-    padding: 3px 2px;
-/*  border-top: var(--red_collage_m) 2px groove;*/
-  border-left: var(--blue_college) 2px ridge;
-  border-right: var(--blue_college) 2px inset;
-  border-bottom: var(--blue_college) 2px outset;
-  border-radius: 0px 0px 10px 10px;
+  padding: 3px 2px;
+  border: var(--blue_college) 2px groove;
+  border-radius: 10px;
   height: 30px;
   margin: 10px;
   margin-top: 20px;
@@ -1159,7 +1161,6 @@ a {
 .menu-horizontal-sup > li :hover {
   background-color: var(--blue_college);
   border-radius: 0px 0px 10px 10px;
-  height: 13px;
   color: var(--white);
 }
 .menu-vertical-sup {
@@ -1848,4 +1849,51 @@ a {
 .control-btn.active {
   color: white;
   background-color: var(--blue_college);
+}
+
+.programs_lab {
+  color: rgb(0, 0, 0); /*color de las letras*/
+  border: rgb(3, 7, 200) 5px solid;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 0.9;
+  letter-spacing: 0.008em;
+  font-weight: 500;
+  width: 300px;
+  height: 60px;
+}
+.programs-2_lab {
+  border: #ff2621 5px solid;
+  color: rgb(0, 0, 0); /*color de las letras*/
+  border-radius: 20px;
+  display: flex; /*cenra*/
+  justify-content: center; /*cenra*/
+  align-items: center; /*cenra*/
+  width: 300px;
+  height: 60px;
+  font-size: 14px;
+  line-height: 0.9;
+  letter-spacing: 0.008em;
+  font-weight: 500;
+}
+.audio_lab {
+  border-radius: 30px;
+  border: 5px solid #7e02b8;
+}
+.content-programs_lab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  gap: 30px;
+  padding: 10px;
+}
+.music_lab {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px 10px;
 }
