@@ -1894,6 +1894,7 @@ a {
 .music_lab {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 60px;
   padding: 20px 10px;
 }
