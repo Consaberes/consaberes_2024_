@@ -1862,7 +1862,7 @@ a {
   line-height: 0.9;
   letter-spacing: 0.008em;
   font-weight: 500;
-  width: 300px;
+  width: 250px;
   height: 60px;
 }
 .programs-2_lab {
@@ -1872,7 +1872,7 @@ a {
   display: flex; /*cenra*/
   justify-content: center; /*cenra*/
   align-items: center; /*cenra*/
-  width: 300px;
+  width: 250px;
   height: 60px;
   font-size: 14px;
   line-height: 0.9;
@@ -1885,16 +1885,22 @@ a {
 }
 .content-programs_lab {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 300px;
   gap: 30px;
-  padding: 10px;
+  padding: 5px;
 }
 .music_lab {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 60px;
   padding: 20px 10px;
+}
+.content_row-lab {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+ 
 }
